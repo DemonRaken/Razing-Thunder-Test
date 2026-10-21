@@ -1,9 +1,18 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
 define e = Character("Eileen")
+define l = Character("El Leopardo")
+define x = Character("???")
+define a = Character("Antonio Ortiz")
+define c = Character("Catalina Moreno")
+
+define tv = Character("TV Reporter")
+define ch = Character("La Chispa")
+define tg = Character("Thug")
+
 
 
 # The game starts here.
@@ -32,4 +41,286 @@ label start:
 
     # This ends the game.
 
-    return
+
+label act1:
+
+  "{color=#38761D}{b}9:45 PM. \nAlleway.{/b}{/color}"
+
+  l "{color=#4A86E8}The grip on my phone tightens instinctively as I watch the violent fall, shocked.{/color}"
+
+  tv "—and those are the images moments before the end of the Razing Thunder race, three days ago. While the jockey Valentina Rios suffered only minor bruises from the fall, her horse, Perla Negra, is currently under intense care."
+
+  tv "The race was halted following the incident, marking the third horse collapse at this year's Razing Thunder competition. Officials have once again postponed the event."
+
+  l " What a nasty fall! And she was so close to claiming first place, too…"
+
+  tg "Bastard! When I get out of these, I'm going to smash that phone on your stupid face!"
+
+  l "{color=#4A86E8}I look at the man I captured, squirming against the ropes and grunting, cussing threats at me. The news reporter's voice fades into background noise as the lowlife distracts me.{/color}"
+
+  l "{color=#4A86E8}Good luck with {/color}{color=#4A86E8}that, tough{/color}{color=#4A86E8} guy. The boys in blue will show up by then to take care of you.{/color}"
+
+  l "{color=#4A86E8}Time to send them an anonymous tip to get them to come. And… sent.{/color}"
+
+  tg "Who the hell are you anyway, you mask freak!? When the boss catches wind of this—"
+
+  l "I am glad you asked!"
+
+  tg "Huh?"
+
+  l "The one who strikes fear in the hearts of evildoers…"
+
+  l "The defender of the innocent and eternal ally of justice...!"
+
+  l "I am El Leopardo!"
+
+  tg "…"
+
+  l "{color=#4A86E8}It seems my grand presentation rendered him speechless, heh.{/color}"
+
+  l "Now, about this boss of yours… he's connected to the Castillo family, isn't he? You lot have been busy. I can make an educated guess about what task he sent you for tonight."
+
+  tg "Bah! I was just running errands, talking to some peeps. Is that a crime, El Tarado?"
+
+  l "It's {b}EL LEOPARDO{/b}! And last I checked, yes, intimidating people to pay their debts is a form of harassment and a crime!"
+
+  l "{color=#4A86E8}I hold out a handgun in front of the man as I empty out the chambers of its bullets onto the cold ground. He scowls, clicking his tongue as he looks away.{/color}"
+
+  l "I doubt you need one of these for a normal chat. How much were you owed?"
+
+  tg "More than that last customer could afford, that's for sure. Just 'cause your favorite pick got cold feet when it mattered doesn't mean you get to not pay up!"
+
+  l "{color=#4A86E8}Curious. So his customer bet on a certain horse, and lost so badly they went into debt.{/color}"
+
+  l "{color=#4A86E8}I wonder if this has something to do with all the incidents at the Razing Thunder...{/color}"
+
+  l "'Don't put all your eggs in one basket', huh?"
+
+  l "{color=#4A86E8}I show my phone screen to the criminal with the Razing Thunder coverage news. {/color}Did your customer bet for this competitor, by any chance?."
+
+  tg "Who knows? I ain't telling you nothing more."
+
+  l "That's quite alright. I'll go ask your customer about it then."
+
+  l "{color=#4A86E8}I drop the gun near him and whistle, waiting for a few moments until my friend arrives.{/color}"
+
+  l "{color=#4A86E8}The guy continues to squirm against his restraints as I hop on the back of the mare I just called.{/color}"
+
+  tg "The fuck- hey, you can't just leave me here!"
+
+  l "Feeling lonely? Don't worry, I already gave someone a call to keep you company in my stead."
+
+  tg "Huh?"
+
+  l "{color=#4A86E8}I grip the reins and ride away from the thug. Looking over my shoulder, I can discern the blue light of a patrol car shining on the walls of the alleyway on the other end. Officers begin to shout orders as they approach him.{/color}"
+
+  tg "Son of a- hey! {size=+6}COME BACK!!!{/size}"
+
+  l "{color=#4A86E8}No thanks. Like I wanna throw in the slammer with you. Once the cops go away, I'll see if I can get into contact with that customer of his.{/color}"
+
+  l "Let's hurry up, Chispa. With some luck, we'll be done before the clock hits midnight."
+
+  ch "Neigh!"
+
+  "{color=#38761D}{b}8:15 AM. \nName of Tony's Odd Jobs Agency.{/b}{/color}"
+
+  l " {color=#4A86E8}Last night, we came across the person I was looking for shortly after. The guy hadn't run too far away, and it looked like the color drained from his face the moment I brought up the debt collector looking for him.{/color}"
+
+  l "{color=#4A86E8}Getting him to spill the beans wasn't easy, but his reactions when Castillo's name was brought up said it all.{/color}"
+
+  l "{color=#4A86E8}Of course, he didn't know who was behind the string of incidents, but he confirmed that debt collectors had been pressuring him ever since the day he bet on Perla Negra and lost.{/color}"
+
+  l "{color=#4A86E8}There's been more and more victims like him going through the same situation ever since this turf race event started a while ago.{/color}"
+
+  l "{color=#4A86E8}They'll bet a considerable amount of cash on a promising jockey, only for their pick to mysteriously lose at the last second.{/color}"
+
+  l "{color=#4A86E8}Since the race itself is a private competition hosted by some bigshot businessman, it makes it difficult for the authorities to get involved.{/color}"
+
+  l "{color=#4A86E8}On the surface, these are nothing more than a string of unfortunate accidents, after all. Ones that just happen to fill up the pockets of those handling the race bets. The clandestine type, that is.{/color}"
+  
+  l "{color=#4A86E8}Limited involvement from the cops gives them more leeway to get away with it. As if regular gambling wasn't enough of a problem, this crap happens…{/color}"
+
+  l "{color=#4A86E8}People bet on a horse that ends up losing, which in turn means they're neck deep into debt. And those that can't pay back are visited by guys like the one I came across.{/color}"
+
+  l "{color=#4A86E8}A tale as old as time. Even so, I can't just stand by and watch it happen. Especially with the kind of foul play going on at the turf race.{/color}"
+
+  l "{color=#4A86E8}The testimonies I have gathered and the {/color}{color=#4A86E8}aprietadores{/color}{color=#4A86E8}I've fought off all point to the Castillo family being involved somehow.{/color}"
+
+  l "{color=#4A86E8}They're putting up a front, operating as another sponsor for the Razing Thunder competitors.{/color}"
+
+  l "{color=#4A86E8}Naturally, just losing a bet doesn't equate to being drowned in debt. I suspect these fiends knowingly allow people to gamble money they don't have, then send their underlings after them when they can't pay. What a wicked scheme.{/color}"
+
+  l "{color=#4A86E8}I can't help but think that they'd make even bigger bucks if someone knew which horse would drop out next during the races...{/color}"
+
+  l "{color=#4A86E8}At any rate, while not unheard of, it's plain unnatural that it has happened three times in a row. Trainers and jockeys are not that neglectful with the horses' health.{/color}"
+
+  l "{color=#4A86E8}...at least, I hope they aren't.{/color}"
+
+  l "{color=#4A86E8}Either way, it's clear there is more than meets the eye! That's why today, I am going to talk to other victims of their ploys and gather clues to bring those fiends to justice—{/color}"
+
+  "{i}*RING!*{/i}"
+
+  l "…? Oh, I got a message."
+
+  l "{color=#4A86E8}The notification at the top of the screen immediately lets me know who the sender is. The owner of this agency I work at- my boss, in other words.{/color}"
+
+  l "You gotta be kidding me… why now of all times? I already cleaned all the windows yesterday!"
+
+  l "I really don't want to open this, but I'll be in a world of pain later if I ignore it…"
+
+  l "{color=#4A86E8}*Shivers.*{/color}"
+
+  l "{color=#4A86E8}Tapping on the notification while letting out a deep sigh, I read what the boss sent me. {/color}"
+
+  l "{color=#4A86E8}Yup. She's got a new gig for me. A special one at that, considering it's last-minute and happening today.{/color}"
+
+  l "{color=#4A86E8}I continue reading the job description, resigning myself to putting my plans on hold.{/color}"
+
+  l "{color=#4A86E8}...{/color}"
+
+  l "Wait, I have to do what!?"
+
+  l "{color=#4A86E8}I reread the contents of the message to make sure I am misunderstanding this request.{/color}"
+
+  l "{color=#4A86E8}T-This… might be the breakthrough I was looking for! I have to hurry and get ready!{/color}"
+
+  l "{color=#4A86E8}Wasting no time, I enthusiastically put my phone away into my pocket and {/color}{color=#4A86E8}rush{/color}{color=#4A86E8}to get everything I {/color}{color=#4A86E8}need{/color}{color=#4A86E8} before heading to meet the person who made the request.{/color}"
+
+  "{color=#38761D}{b}9:20 AM. \nPlaza.{/b}{/color}"
+
+  l "{color=#4A86E8}This should be the place… Chispa makes it a cinch to get around in no time.{/color}"
+  
+  l "{color=#4A86E8}I wait around by a fountain for the client to show up, pulling from the reins to stop Chispa whenever she tries to take a sip.{/color}"
+  
+  l "C'mon, you don't know how dirty that water could be."
+
+  ch "..."
+
+  x "Is this your idea of making a good first impression? Frankly, you are overdoing it."
+
+  l "{color=#4A86E8}I turn over to the voice addressing me with disdain.{/color}"
+
+  x "It's useless to show off whatever caretaker abilities you have. You won't be using them."
+
+  l "What? I am not showing off. I came here on horseback from my workplace."
+
+  x "In this day and age? If you can't afford a car, taking the bus is always an option."
+
+  l "{color=#4A86E8}Ouch. Straight to assuming I'm too broke for a car? Not that I can deny it.{/color} I like riding with Chispa here more. Nothing beats the cozy feel of the breeze when this one starts galloping."
+
+  x "It sounds to me like you are asking to get arrested for running into cars."
+
+  l "Hey, the only illegal thing is moving through highways! More importantly, I got your request's details from my boss."
+
+  l "Miss, you are {color=#FF9900}Catalina Moreno{/color}, right? I am—"
+
+  c "{color=#FF9900}Antonio Ortiz. {/color}I know."
+
+  a "{color=#4A86E8}…indeed. El Leopardo's secret identity- the man behind the mask is none other than Antonio Ortiz.{/color}"
+
+  a "{color=#4A86E8}When I am not fighting crime at night, I work at an odd jobs agency, taking on all kinds of gigs that come my way. I'm a jack of all trades, you could say.{/color}"
+
+  a "{color=#4A86E8}My specialty is offering my services as a private investigator. Sadly, business on that front hasn't picked up lately, so–{/color}"
+
+  c "—hey. I'm talking to you. Are you even listening?"
+
+  a "Wha- sorry! I zoned out there for a sec."
+
+  c "Good grief. As I was saying, who you are is inconsequential, and my reputation precedes me, so let's keep introductions short."
+
+  a "{color=#4A86E8}Geez… you sure know how to pick 'em, boss. This is gonna be one hell of a day…{/color}"
+
+  
+
+  menu:
+
+        a "Right. Your reputation. I…"
+
+        "I know who you are":
+
+            jump iknow
+
+        "I have no idea who you are.":
+
+            jump idk
+
+label iknow:
+
+    a "Catalina Moreno— you are one of the best professional jockeys hitting the turf races these days."
+
+    a "I think you got second place during the last Razing Thunder race—"
+
+    c "…Those results aren't final. The event was postponed after all, and will be resumed today."
+
+    c "I will be making the most out of it and beat my competition."
+
+    a "{color=#4A86E8}Guh. She is glaring daggers at me now.{/color}"
+
+    jump act1continues
+    
+label idk:
+
+    a "To be honest? I never heard of you until my boss reached out to me this morning."
+
+    c "…I said your caretaker abilities didn't matter. But you should be aware of your employer's status, lest your ignorance makes you behave in a way that embarrasses me in public."
+
+    c "For generations, my family has produced some of the finest jockeys in the country. Our name carries weight overseas, too."
+
+    c "However, I have no intention of simply bragging about the achievements of my relatives."
+
+    c "Today, I will show you and everyone what I can do. On the race."
+
+    jump act1continues
+
+label act1continues:
+  a "Wait a moment… Did you say today? The event is resuming already? That's way too soon! What about the horse that collapsed a couple of days ago?"
+
+  a "Have the organizers or the police at least figured out what happened?"
+
+  c "No. And I doubt the organizers are interested in doing so. Their main concern is resuming the event."
+
+  a "That's reckless! What if another horse collapses? They can't just—"
+
+  c "If that happens, then the jockey has failed in their duty to protect their horse."
+
+  a "What…? Aren't you afraid the same could happen to you and your horse?"
+
+  c "That is why I hired you, is it not? To play the role of trainer for me."
+
+  c "Don't be mistaken. I am fully capable of looking after Dama de Plata on my own."
+
+  c "It's a requirement that every horse and jockey are accompanied by a trainer when signing up for the race."
+
+  c "I don't need you to control my steed. I only need you because regulations demand it."
+
+  a "So... I am just a legal requirement."
+
+  c "Essentially."
+
+  a "{color=#4A86E8}This woman…! She really doesn't mince words, does she?{/color}"
+
+  a "Great... then why hire me at all for this? I am sure someone of your status could get almost anyone to do it."
+
+  c "Usually, yes. But it seems that is not the case this time around. No one would take the job."
+
+  c "No one except for you, that is."
+
+  c "...Let's go. We've wasted enough time."
+
+  a "{color=#4A86E8}With that, Catalina turned around and walked off, leaving me behind.{/color}"
+
+  a "{color=#4A86E8}That wasn't ominous at all. And it's my boss who accepted this job without consulting me.{/color}"
+
+  a "{color=#4A86E8}...I don't know whether to feel offended or happy. Sounds like I'll have little to no responsibilities keeping me busy. {/color}"
+
+  a "{color=#4A86E8}That gives me plenty of time to investigate. That's a good thing.{/color}"
+
+  a "It is, but...! It still hurts my pride, damn it! I would make a fine horse trainer! Right, Chispa?!"
+
+  ch "Neigh!"
+
+  a "Thanks, girl. I can always count on you."
+
+  a "{color=#4A86E8}Huffing, I hold onto the reins and hurry to go after my 'delightful' employer.{/color}"
+
+return
