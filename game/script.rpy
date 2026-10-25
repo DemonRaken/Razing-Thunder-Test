@@ -216,11 +216,13 @@ label act1:
 
   c "{color=#FF9900}Antonio Ortiz. {/color}I know."
 
+  show tony-neutral
+
   a "{color=#4A86E8}…indeed. El Leopardo's secret identity- the man behind the mask is none other than Antonio Ortiz.{/color}"
 
   a "{color=#4A86E8}When I am not fighting crime at night, I work at an odd jobs agency, taking on all kinds of gigs that come my way. I'm a jack of all trades, you could say.{/color}"
 
-  a "{color=#4A86E8}My specialty is offering my services as a private investigator. Sadly, business on that front hasn't picked up lately, so–{/color}"
+  a "{color=#4A86E8}My specialty is offering my services as a private investigator. Sadly, business on that front hasn't picked up lately, so-{/color}"
 
   c "—hey. I'm talking to you. Are you even listening?"
 
