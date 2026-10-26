@@ -23,23 +23,11 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
-
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
+    # directory.    
 
     # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    e "Hi!"
-
-    # This ends the game.
 
 
 label act1:
@@ -53,6 +41,8 @@ label act1:
   tv "The race was halted following the incident, marking the third horse collapse at this year's Razing Thunder competition. Officials have once again postponed the event."
 
   l " What a nasty fall! And she was so close to claiming first place, too…"
+
+  show thug
 
   tg "Bastard! When I get out of these, I'm going to smash that phone on your stupid face!"
 
@@ -75,6 +65,8 @@ label act1:
   l "I am El Leopardo!"
 
   tg "…"
+
+  show leo-neutral
 
   l "{color=#4A86E8}It seems my grand presentation rendered him speechless, heh.{/color}"
 
@@ -215,6 +207,9 @@ label act1:
   l "Miss, you are {color=#FF9900}Catalina Moreno{/color}, right? I am—"
 
   c "{color=#FF9900}Antonio Ortiz. {/color}I know."
+
+  hide leo-neutral
+  hide thug
 
   show tony-neutral
 
