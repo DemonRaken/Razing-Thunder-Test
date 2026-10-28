@@ -1,21 +1,113 @@
+# Ren'Py Built-in Configuration
+define config.side_image_only_not_showing = True   # make side image not show when full body is shown.
+define config.say_attribute_transition = Dissolve(0.2, alpha=True)   # Always add a dissolve when expression changes
+
+# Default overrides probably shouldn't be here. Edit options.rpy and find the line that sets it to 0 and set it something else
+default preferences.text_cps = 15   
+
 # The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
-define l = Character("El Leopardo")
-define x = Character("???")
-define a = Character("Antonio Ortiz")
-define c = Character("Catalina Moreno")
+define bb = Character(ctc="ctc_horse", ctc_pause="ctc_horse", ctc_position="fixed", window_background="textbox1")
 
-define tv = Character("TV Reporter")
-define ch = Character("La Chispa")
-define tg = Character("Thug")
+
+define x = Character("???", kind=bb)
+
+define l = Character("El Leopardo", kind=bb, image="leo", callback=blip_voice, cb_blipfile="audio/male.wav")
+define lt = Character(kind=l, what_color="#4A86E8", cb_blipfile=None)
+define t = Character("Antonio Ortiz", kind=l, image="tony")
+define tt = Character(kind=t, what_color="#4A86E8", cb_blipfile=None)
+
+
+define c = Character("Catalina Moreno", kind=bb, image="cata")
+
+
+define tv = Character("TV Reporter", kind=bb)
+define ch = Character("La Chispa", kind=bb)
+define tg = Character("Thug", kind=bb)
+
+
+# Change narrator to use the bb base
+define narrator = Character(kind=bb, callback=blip_voice, cb_blipfile="audio/type.wav")
+
+# The time and location
+define tl = Character(what_color="#38761D", what_bold=True, kind=narrator)
 
 
 
 # The game starts here.
+
+image deleteme_flicker_night:
+    "neighborhood 2 night light"
+    pause 0.1
+    "neighborhood 2 night"
+    pause 0.05
+    "neighborhood 2 night light"
+    pause 0.3
+    "neighborhood 2 night"
+    pause 0.08
+    "neighborhood 2 night light"
+    pause 0.15
+    "neighborhood 2 night"
+    pause 0.03
+    "neighborhood 2 night light"
+    pause 0.2
+    repeat   
+
+label deleteme:
+    scene deleteme_flicker_night
+    tl "9:30 PM\nSome average Argentinian street\nwith poor electrical supply."
+    show leo serious
+    l "This is me speaking."
+    lt "This is me thinking."
+    lt smile "...mmm..."
+    tl "The time is now\nLocation is here."
+    "{color=#38761D}{b}9:45 PM. \nAlleway.{/b}{/color}"
+    tl "9:45 PM. \nAlleway."
+    "Both location texts look the same! Nice, right?{w}\nOh, I am the narrator, hi!"
+    l serious "hey... maybe I..."
+    l smile "Thinking makes me happy."
+    hide leo
+    l serious "Time for me to go around."
+    l smile "So I walk and walk around.{w} Talking to myself. {w}With no care in the world."
+    lt serious blush "It's late, everyone is at home..."
+    lt serious blush drop "Maybe, I could take this mask off."
+    show leo with dissolve
+    l "Prepare for my grand reveal!"
+    hide leo
+    show tony serious blush
+    x "It feels Awesome!"
+    x "I am free and no body knows me!"
+    show tony at left
+    show cata neutral at right
+    c "Ortiz! Antonio Ortiz! Come here!"
+    t "No! Stay back! Stay away!"
+    tt serious drop "I must run away"
+    hide cata
+    show tony at center
+    tt "And so I ran away from her."
+    t "Phew, that was a close one."
+    hide tony
+    tt "I wonder if there is something here."
+    t serious "Let's explore this area"
+    c "Ortiz! Come back here"
+    t serious drop "On no! I must Run!"
+    show cata neutral with vpunch
+    c "No, you won't. I heard you!"
+    t "Yikes! H-Hello!"
+    c "You must come with me and investigate the Derby"
+    t what det serious drop "Whaaaa"
+    t det serious right blush drop "You bet I would! Just let me put on my mask."
+    lt eh serious drop "I hate being rushed."
+    show leo at left
+    show cata at right
+    l "I am ready, ma'am. Let's go!"
+    c "This way!"
+
+    scene sky night day
+    return
 
 label start:
 
@@ -28,21 +120,22 @@ label start:
     # directory.    
 
     # These display lines of dialogue.
-
+    call deleteme
 
 label act1:
 
-  "{color=#38761D}{b}9:45 PM. \nAlleway.{/b}{/color}"
+  tl "9:45 PM. \nAlleway."
 
-  l "{color=#4A86E8}The grip on my phone tightens instinctively as I watch the violent fall, shocked.{/color}"
+  lt "The grip on my phone tightens instinctively as I watch the violent fall, shocked."
 
   tv "—and those are the images moments before the end of the Razing Thunder race, three days ago. While the jockey Valentina Rios suffered only minor bruises from the fall, her horse, Perla Negra, is currently under intense care."
 
   tv "The race was halted following the incident, marking the third horse collapse at this year's Razing Thunder competition. Officials have once again postponed the event."
 
-  l " What a nasty fall! And she was so close to claiming first place, too…"
+  l "What a nasty fall! And she was so close to claiming first place, too…"
 
-  show thug
+  show thug:
+    zoom 2
 
   tg "Bastard! When I get out of these, I'm going to smash that phone on your stupid face!"
 
