@@ -59,7 +59,7 @@ image deleteme_flicker_night:
 label deleteme:
     scene deleteme_flicker_night
     tl "9:30 PM\nSome average Argentinian street\nwith poor electrical supply."
-    show leo serious
+    show leo neutral
     l "This is me speaking."
     lt "This is me thinking."
     lt smile "...mmm..."
@@ -67,40 +67,40 @@ label deleteme:
     "{color=#38761D}{b}9:45 PM. \nAlleway.{/b}{/color}"
     tl "9:45 PM. \nAlleway."
     "Both location texts look the same! Nice, right?{w}\nOh, I am the narrator, hi!"
-    l serious "hey... maybe I..."
+    l neutral "hey... maybe I..."
     l smile "Thinking makes me happy."
     hide leo
-    l serious "Time for me to go around."
+    l neutral "Time for me to go around."
     l smile "So I walk and walk around.{w} Talking to myself. {w}With no care in the world."
-    lt serious blush "It's late, everyone is at home..."
-    lt serious blush drop "Maybe, I could take this mask off."
+    lt neutral blush "It's late, everyone is at home..."
+    lt neutral blush drop "Maybe, I could take this mask off."
     show leo with dissolve
     l "Prepare for my grand reveal!"
     hide leo
-    show tony serious blush
+    show tony neutral blush
     x "It feels Awesome!"
     x "I am free and no body knows me!"
     show tony at left
     show cata neutral at right
     c "Ortiz! Antonio Ortiz! Come here!"
     t "No! Stay back! Stay away!"
-    tt serious drop "I must run away"
+    tt neutral drop "I must run away"
     hide cata
     show tony at center
     tt "And so I ran away from her."
     t "Phew, that was a close one."
     hide tony
     tt "I wonder if there is something here."
-    t serious "Let's explore this area"
+    t neutral "Let's explore this area"
     c "Ortiz! Come back here"
-    t serious drop "On no! I must Run!"
+    t neutral drop "On no! I must Run!"
     show cata neutral with vpunch
     c "No, you won't. I heard you!"
     t "Yikes! H-Hello!"
     c "You must come with me and investigate the Derby"
-    t what det serious drop "Whaaaa"
-    t det serious right blush drop "You bet I would! Just let me put on my mask."
-    lt eh serious drop "I hate being rushed."
+    t what det neutral drop "Whaaaa"
+    t det neutral right blush drop "You bet I would! Just let me put on my mask."
+    lt eh neutral drop "I hate being rushed."
     show leo at left
     show cata at right
     l "I am ready, ma'am. Let's go!"
@@ -159,7 +159,7 @@ label act1:
 
   tg "…"
 
-  show leo serious
+  show leo neutral
 
   lt "It seems my grand presentation rendered him speechless, heh."
 
@@ -303,10 +303,10 @@ label act1:
 
   c "{color=#FF9900}Antonio Ortiz. {/color}I know."
 
-  hide leo serious
+  hide leo neutral
   hide thug
 
-  show tony serious
+  show tony neutral
 
   tt "…indeed. El Leopardo's secret identity- the man behind the mask is none other than Antonio Ortiz."
 
