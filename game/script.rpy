@@ -3,7 +3,7 @@ define config.side_image_only_not_showing = True   # make side image not show wh
 define config.say_attribute_transition = Dissolve(0.2, alpha=True)   # Always add a dissolve when expression changes
 
 # Default overrides probably shouldn't be here. Edit options.rpy and find the line that sets it to 0 and set it something else
-default preferences.text_cps = 15   
+default preferences.text_cps = 30   
 
 # The script of the game goes in this file.
 
