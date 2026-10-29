@@ -10,15 +10,17 @@ default preferences.text_cps = 15
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define bb = Character(ctc="ctc_horse", ctc_pause="ctc_horse", ctc_position="fixed", window_background="textbox1")
+define bb = Character(ctc="ctc_horse", ctc_pause="ctc_horse", ctc_position="fixed",
+                      window_background="textbox1",
+                      callback=blip, cb_blipfile="audio/tick.wav")
 
 
 define x = Character("???", kind=bb)
 
-define l = Character("El Leopardo", kind=bb, image="leo", callback=blip_voice, cb_blipfile="audio/male.wav")
-define lt = Character(kind=l, what_color="#4A86E8", cb_blipfile=None)
+define l = Character("El Leopardo", kind=bb, image="leo")
+define lt = Character(kind=l, what_color="#4A86E8")#, cb_blipfile=None)
 define t = Character("Antonio Ortiz", kind=l, image="tony")
-define tt = Character(kind=t, what_color="#4A86E8", cb_blipfile=None)
+define tt = Character(kind=t, what_color="#4A86E8")#, cb_blipfile=None)
 
 
 define c = Character("Catalina Moreno", kind=bb, image="cata")
@@ -30,7 +32,7 @@ define tg = Character("Thug", kind=bb)
 
 
 # Change narrator to use the bb base
-define narrator = Character(kind=bb, callback=blip_voice, cb_blipfile="audio/type.wav")
+define narrator = Character(kind=bb, callback=blip, cb_blipfile="audio/type.wav", cb_bliploop=True)
 
 # The time and location
 define tl = Character(what_color="#38761D", what_bold=True, kind=narrator)
@@ -159,7 +161,7 @@ label act1:
 
   tg "…"
 
-  show leo neutral
+  show leo neutral at left
 
   lt "It seems my grand presentation rendered him speechless, heh."
 
@@ -299,7 +301,7 @@ label act1:
 
   l "Hey, the only illegal thing is moving through highways! More importantly, I got your request's details from my boss."
 
-  l "Miss, you are "{color=#FF9900}Catalina Moreno{/color}", right? I am—"
+  l "Miss, you are \"{color=#FF9900}Catalina Moreno{/color}\", right? I am—"
 
   c "{color=#FF9900}Antonio Ortiz. {/color}I know."
 
